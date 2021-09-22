@@ -5,21 +5,21 @@ export class Flights {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ nullable: true })
   origin: string;
 
-  @Column()
+  @Column({ nullable: true })
   destination: string;
 
-  @Column()
+  @Column({ nullable: true })
   flightNumber: string;
 
-  @Column()
+  @Column({ nullable: true })
   depart: string;
 
-  @Column()
+  @Column({ nullable: true })
   arrive: string;
 
-  @Column()
+  @Column({ nullable: true })
   nonstop: boolean;
 }
